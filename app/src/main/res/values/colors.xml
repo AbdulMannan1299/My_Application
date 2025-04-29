@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_text">#212121</color>   <color name="secondary_text">#757575</color> <color name="accent">#4CAF50</color>        <color name="accent_variant">#388E3C</color> <color name="background">#F0F0F0</color>      <color name="folder_background">#E0F7FA</color> <color name="image_background">#FFFDE7</color>  <color name="search_background">#FFFFFF</color> <color name="folder_text">#000000</color>   <color name="image_title">#212121</color>    <color name="image_date_time">#757575</color> <color name="button_import_files">#90CAF9</color>   <color name="button_import_images">#80CBC4</color>  <color name="button_capture_image">#FFF59D</color> <color name="splash_background">#FFFFFF</color>
+    <color name="splash_text">#4CAF50</color>
+
+    <color name="share_icon">#1565C0</color>   <color name="dialog_background">#FFFFFF</color>
+    <color name="dialog_text">#000000</color>
+
+</resources>
