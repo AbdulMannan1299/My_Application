@@ -5,6 +5,7 @@
     android:background="@color/splash_background">  <ImageView
     android:id="@+id/splashIcon"
     android:layout_width="120dp"
+    android:background="@color/share_icon"
     android:layout_height="120dp"
     android:src="@drawable/ic_splash_logo"  android:layout_centerInParent="true" />
 

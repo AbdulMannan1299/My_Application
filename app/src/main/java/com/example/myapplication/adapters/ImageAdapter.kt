@@ -1,5 +1,5 @@
 // ImageAdapter.kt
-
+package com.example.myapplication.imageadapter
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
@@ -11,12 +11,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
+import com.example.myapplication.ImageItem
 import java.io.IOException
 import java.io.InputStream
 import java.text.SimpleDateFormat
 import java.util.*
 
-class ImageAdapter(private val images: MutableList<ImageItem>, private val onClick: (Image) -> Unit) :
+class ImageAdapter(private val images: MutableList<ImageItem>, private val onClick: (ImageItem) -> Unit) :
     RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
@@ -30,9 +31,9 @@ class ImageAdapter(private val images: MutableList<ImageItem>, private val onCli
 
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val image = images[position]
-        holder.imageTitleTextView.text = image.title
+        holder.imageTitleTextView.text = image.name
         val dateFormat = SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault())
-        holder.imageDateTimeTextView.text = dateFormat.format(image.date)
+//        holder.imageDateTimeTextView.text = dateFormat.format(image.date)
 
         // Load image manually using AsyncTask
         LoadBitmapTask(holder.imageImageView).execute(image.uri)
